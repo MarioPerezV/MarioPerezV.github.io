@@ -1,2 +1,3 @@
-# MarioPerezV.github.io
-Pruebas web con inteligencia artificial
+## MarioPerezV.github.io
+## Preparando Proyecto de Herramientas productivas web (backend), además incluye Pruebas con inteligencia artificial (tiene costos que necesito financiar)
+# Atentos...
