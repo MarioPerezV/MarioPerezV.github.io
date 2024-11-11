@@ -1,0 +1,165 @@
+<!-- Mario Perez Vilchez - Ingeniería Informática - TI-M1-Programación de Aplicaciones Web
+STARTER TEMPLATE
+Dentro de las fortalezas vemos una estructura indentada del código HTML-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Icono personalizado en el navegador y título-->
+        <link rel="shortcut icon" href="img/ecoma.ico" />
+        <title>MarioPerezV_TI-1_ProgramacionAppWeb</title>
+        <!-- Bootstrap CSS:  la carpeta descargable que finalmente se eliminó
+        <link rel="stylesheet" href="css/bootstrap.css">-->
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="estilos.css" />
+        <!--la primera es del tutor, La segunda es de la IA, aquí quedé con la duda que hubiese alguna redundancia -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Opcional: jQuery primero, luego Popper.js y Bootstrap JS de acuerdo a la plantilla Starter Template, lo vamos a ocultar mientras...
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+Este código esta repetido y no me funcionó (después de unos días lo puse al final como script), lo dejo comentado como parte del aprendizaje
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybUpAt2NwI1Ob98wT7M3r/QH03BflF1Fg+Z4YB/+0/E63JpS+" crossorigin="anonymous"></script>
+Este otro código también esta repetido y tampoco me funcionó, lo dejo comentado como parte del aprendizaje
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0l3Zg8UnH7v1t3Z3yB1t6z6hM1cC8cv5KbX/kE+e2l37Vi/Qc3iUPW3XPOu+c3jC" crossorigin="anonymous"></script>-->
+    </head>
+    <body>
+        <header>
+<!-- Barra de navegación superior. Además intentaremos dejar fija la NavBar en la parte superior cuando se deslice el scroll -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">  <!-- Cambio de color de la navbar a bg-primary (fondo azul y letras blancas) y fixed top fija la navbar-->
+                <div class="container-fluid">
+                    <img src="img/logo.png" class="rounded" alt="Logo club ajedrez" width="40">
+                    <a class="navbar-brand" href="#">Club de Ajedrez<br> Gambito de Capablanca</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto"> <!--Centramos -->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inscripciones</a>
+                            </li>
+<!-- En la ubicación del menú desplegable DROPDOWN (que por desconocimiento de Bootstrap hubo varias redundancias) 
+ en el código lo que trajo desastres y frustraciones por no haber entendido lo que realmente era solicitado para 
+ esta actividad, después de observar detenidamente la clase 2 se cae en cuenta de que se podía colocar el dropdown 
+ en cualquier posición, bueno ya está ubicado aquí-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Opciones</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Cadetes</a></li>
+                                    <li><a class="dropdown-item" href="#">Capitanes</a></li>
+                                    <li><a class="dropdown-item" href="#">Solo Maestros</a></li>
+                                </ul>
+                            </li> <!--solo como práctica, Item adicional deshabilitado -->
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Inhabilitado</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header><!-- Aqui insertamos las 5 imágenes solicitadas 3 rounded y 2 circle -->
+        <div class="container text-center mt-5 pt-5">
+            <img src="img/logo.png" alt="Logo club" width="70">
+            <h2 class="text-center">Bienvenid@s al Club</h2>
+            <h3 class="text-center">Tenemos los siguientes desafíos para tí:</h3>
+            <img src="img/B1.png" class="rounded" width="200" alt="primer Desafío juegan blancas">
+            <img src="img/N1.png" class="rounded-circle" width="200" alt="segundo Desafío juegan negras">
+            <img src="img/B2.png" class="rounded" width="200" alt="tercer Desafío juegan blancas">
+            <img src="img/N2.png" class="rounded-circle" width="200" alt="cuarto Desafío juegan negras">
+            <img src="img/B3.png" class="rounded" width="200" alt="quinto Desafío juegan blancas">
+        </div>
+<!-- 5 párrafos de distinto tamaño del texto en 2 section con distinto color de fondo-->
+        <div class="container text-center py-3">
+            <section class="bg-custom-1 py-1 mt-1">
+                <h3>Se reciben inscripciones al </h3><h2>Torneo de Todos Los Santos</h2>
+                <p class="parrafo-1">El ajedrez es más que un simple juego; es una actividad que estimula la mente y fomenta el pensamiento estratégico. Un club permite a los miembros intercambiar conocimientos, mejorar sus habilidades y disfrutar de la competencia amistosa, creando así una comunidad unida por el amor al juego.</p><br>
+                <p class="parrafo-2">Los torneos son una parte fundamental de la vida de nuestro club de ajedrez. Estos eventos no solo permiten a los jugadores medir sus habilidades contra otros, sino que también generan un sentido de comunidad y motivación.</p><br>
+            </section>
+            <section class="bg-custom-2 py-2">
+                <h2>Fomenta un espíritu de camaradería</h2>
+                <p class="parrafo-3">Promueve el desarrollo de habilidades sociales. A través de la interacción constante con otros miembros, los jugadores aprenden a comunicarse mejor, a trabajar en equipo y a respetar a sus oponentes. Estas habilidades también se trasladan a otras áreas de la vida, fortaleciendo la autoestima y fomentando un ambiente de apoyo mutuo.</p><br>
+                <p class="parrafo-4">Uno de los principales beneficios de pertenecer a nuestro club de ajedrez es el acceso a un entorno de aprendizaje enriquecedor. Los jugadores experimentados pueden actuar como mentores para los principiantes, ofreciendo consejos y tácticas que pueden transformar la manera en que juegan.</p><br>
+                <p class="parrafo-5">Las personas de todas las edades y niveles de habilidad son bienvenidas, lo que enriquece la experiencia de todos los miembros. La diversidad de perspectivas y estilos de juego en nuestro club fomenta un entorno en el que todos pueden aprender y disfrutar del ajedrez, creando una comunidad vibrante y activa que trasciende el simple hecho de jugar.</p>
+            </section>
+        </div>
+<!-- Carrusel con 3 imágenes, se incluyen indicadores y texto (cambié el color a púrpura), los indicadores
+y texto son blancos por defecto, así que no se ven las flechas a menos que cambie el color del fondo, 
+pero cono no afecta mucho no me quise complicar más de lo que ya me había complicado, aquí tuve varios 
+errores debido a que algunos códigos utilizados eran de Bootstrap 4. Ejemplo: data-ride se debió cambiar 
+a data-bs-ride -->
+        <div class="container text-center my-3">
+            <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+<!-- Se realizaron algunos ajustes en las imágenes para una mejor experiencia visual, en vez de 
+w-100 lo dejé como w-50-->
+                            <img class="d-block w-50" src="img/B2.png" alt="primera imagen">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="negra">Juegan Blancas</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img class="d-block w-50" src="img/N2.png" alt="segunda imagen">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="negra">Juegan Negras</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img class="d-block w-50" src="img/B3.png" alt="tercera imagen">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="negra">Juegan Blancas</h2>
+                        </div>
+                    </div>
+                </div>
+<!-- Se incluye el botón de control para adelantar o devolver la imagen del carrusel, sin embargo no se ve-->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+        </div>
+<!-- JS de Bootstrap, claramente esta fue una decisión complicada, no había usado navbar y dropdown juntos 
+y pensaba que la tarea se refería a eso, después de la clase con el profesor me di cuenta de que 
+dropdown podía estar en cualquier parte, pero una vez hecho no quise eliminar el script -->
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
+
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+    </script>
+    </body> 
+<!-- footer con nombre, apellido y nombre de fantasía de la empresa, puede ser percepción mía, pero parece 
+otro tono de azul diferente al de la navbar, se comentó el codigo CSS con fondo azul porque también veo 
+una diferencia de tono, por lo menos es el mismo código del navbar-->
+    <footer class="text-center mt-5 bg-primary">
+        <h5>Mario Alejandro Pérez Vilchez <br>Servicios Informaticos Ecoma Ltda<br>Todos los derechos reservados 2024</h5>
+    </footer>
+<!-- Enlace a JS van al final, lo desactivo para actualizar los cambios (por ahora), casi olvido descomentarlo -->
+    <script src="scripts.js"></script>
+</html>
