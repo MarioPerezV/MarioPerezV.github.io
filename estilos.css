@@ -32,5 +32,19 @@ se optó por insertar el mismo codigo bootstrap en el footer y la navbar*/
     padding: 30px;
 }
 .negra {
-    color: blue;
+    color: purple;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.hero {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+.project-card {
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: scale(1.05);
 }
