@@ -55,13 +55,16 @@
 </head>
 <body>
     <header class="bg-primary text-white text-center py-4">
-        <h1>Mi Portafolio</h1>
-        <p>Desarrollador Web | PHP | MySQL | JavaScript</p>
+        <h1 id="arriba">Mi Portafolio</h1>
+        <p>Desarrollador Web | PHP | MySQL / PostgreSQL | JavaScript | Bootstrap</p>
     </header>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero container col-md-6">
         <h2>Hola, mi nombre es Mario</h2>
-        <p>Soy un desarrollador apasionado por crear soluciones eficientes y escalables.</p>
+        <p>Soy un desarrollador comprometido con los objetivos designados, apasionado por 
+            crear soluciones eficientes y escalables con habilidades blandas demostrables.<br>
+            <h5>Mi objetivo es colaborar en una compañia de tecnología en la que pueda 
+            desarrollarme y crecer profesionalmente.</h5></p>
         <a href="#contact" class="btn btn-primary">Contáctame</a>
     </section>
     <!-- Proyectos -->
@@ -73,17 +76,17 @@
                     <img src="img/Codigo_php.jpg" class="card-img-top" alt="Código PHP">
                     <div class="card-body">
                         <h5 class="card-title">Validación de Contraseñas</h5>
-                        <p class="card-text">Sistema para validar contraseñas con criterios personalizados y administración de sesiones.</p>
+                        <p class="card-text">Sistema para validar contraseñas con criterios personalizados y administración de sesiones con PHP.</p>
                         <a href="#contact" class="btn btn-outline-primary">Saber más</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card project-card">
-                    <img src="img/MySQL.png" class="card-img-top" alt="Proyecto 1">
+                    <img src="img/postgre-mysql.jpg" class="card-img-top" alt="Proyecto 1">
                     <div class="card-body">
                         <h5 class="card-title">Gestor CRUD con Base de datos</h5>
-                        <p class="card-text">Aplicación web para gestionar datos almacenados con autenticación y roles.</p>
+                        <p class="card-text">Aplicación web en administración de base de datos almacenados con Mysql o Postgresql</p>
                         <a href="#contact" class="btn btn-outline-primary">Saber más</a>
                     </div>
                 </div>
@@ -101,7 +104,7 @@
         </div>
     </section>
     <!-- Habilidades -->
-    <section id="skills" class="bg-light py-5">
+    <section id="skills" class="container col-md-11 bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-4">Habilidades</h2>
             <div class="row text-center">
@@ -115,7 +118,7 @@
                 </div>
                 <div class="col-md-3">
                     <i class="bi bi-server display-4"></i>
-                    <h5>PHP & MySQL</h5>
+                    <h5>PostgreSQL & MySQL</h5>
                 </div>
                 <div class="col-md-3">
                     <i class="bi bi-bootstrap display-4"></i>
@@ -125,7 +128,7 @@
         </div>
     </section>
     <!-- Contacto -->
-    <section id="contact" class="container py-5 bg-primary text-white">
+    <section id="contact" class="container col-md-6 py-5 bg-primary text-white">
         <h2 class="text-center mb-4">Contacto</h2>
         <form id="form">
             <div class="mb-3">
@@ -141,7 +144,8 @@
                 <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
             </div>
             <input type="submit" id="button" class="btn btn-primary" value="Enviar"><br>
-            <!-- <button type="submit" class="btn btn-primary" id="button">Enviar</button> -->
+            <br>
+            <a href="#arriba" class="btn btn-primary container col-md-12">Volver arriba</a>
         </form>
     </section>
     <footer class="bg-secondary text-white text-center py-3">
