@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img\ecoma.ico" />
-    <title>Mi Portafolio</title>
+    <title>Compra-Venta</title>
     <link rel="stylesheet" href="estilos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
@@ -17,13 +16,11 @@
             });
         })();
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript">
         window.onload = function () {
             document.getElementById('form').addEventListener('submit', function (event) {
                 event.preventDefault();
-
                 // Enviar el formulario con EmailJS
                 emailjs.sendForm('default_service', 'template_i5hal5p', this)
                     .then(() => {
@@ -35,7 +32,6 @@
                             confirmButtonText: 'Cerrar',
                             timer: 3000
                         });
-
                         // Limpiar los campos del formulario
                         this.reset();
                     }, (error) => {
@@ -51,16 +47,19 @@
             });
         };
     </script>
-
 </head>
 <body>
     <header class="bg-primary text-white text-center py-3">
-        <h1 id="arriba">Mi Portafolio</h1>
-        <p>Programador Web | Python | PHP | MySQL / PostgreSQL | JavaScript | Bootstrap<br>
+        <h1 id="arriba">Nuestros Servicios y Socios</h1>
+        <!-- <p> Aplicaciones Web | Agentes con Inteligencia Artificial | Administración de Base de Datos <br> -->
+        <a href="#contact" class="btn btn-primary pt-2">Fuerza de Ventas</a> |
+        <a href="www.vicentefigueroa.com" class="btn btn-primary pt-2">Agentes IA</a> |
+        <a href="www.vicentefigueroa.com" class="btn btn-primary pt-2">Ingenieros Informática</a> |
+        <a href="https://instituto.ipp.cl/amigo-referido?token=f5a1614b-4345-42f9-bea1-7e1be04c3f02" class="btn btn-primary pt-2">Instituto Profesional Providencia</a> |
         <a href="https://github.com/MarioPerezV" class="btn btn-primary pt-2">GitHub</a> |
         <a href="https://www.linkedin.com/in/ecomaeirl/" class="btn btn-primary pt-2">LinkedIn</a> 
     </header>
-    <!-- Hero Section -->
+    <!-- Hero Section 
     <section class="hero container col-md-6">
         <h2>Hola, mi nombre es Mario</h2>
         <p>Soy un programador comprometido con los objetivos asignados, apasionado por 
@@ -68,12 +67,12 @@
         <h5>Mi objetivo es colaborar en una compañia de tecnología en la que pueda 
             desarrollarme y crecer profesionalmente.</h5></p>
         <a href="#contact" class="btn btn-primary">Contáctame</a>
-    </section>
+    </section> -->
     <!-- Proyectos -->
     <section id="projects" class="container py-5 bg-primary">
-        <h2 class="text-center mb-4 text-white">Proyectos Destacados</h2>
+        <h2 class="text-center mb-4 text-white">Oportunidades</h2>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-6 mb-6">
                 <div class="card project-card">
                     <a href="https://instituto.ipp.cl/amigo-referido?token=47d5f307-309a-4c4c-975a-27ee141c57d1" target="_blank">
                         <img src="img/IPP_img.png" class="card-img-top" alt="Proyecto 1">
@@ -81,10 +80,22 @@
                     <div class="card-body">
                         <h5 class="card-title">Encuentra la carrera de tus sueños</h5>
                         <p class="card-text">Más de 40 años formando profesionales que nos eligen para llevar su carrera a otro nivel.</p>
-                        <a href="#contact" class="btn btn-outline-primary">Saber más</a>
+                        <a href="https://instituto.ipp.cl/amigo-referido?token=47d5f307-309a-4c4c-975a-27ee141c57d1" class="btn btn-outline-primary">Saber más</a>
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 mb-6">
+                <div class="card project-card">
+                    <a href="https://instituto.ipp.cl/amigo-referido?token=47d5f307-309a-4c4c-975a-27ee141c57d1" target="_blank">
+                        <img src="img/IPP_img.png" class="card-img-top" alt="Proyecto 1">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Transforma tu Negocio con automatización e IA</h5>
+                        <p class="card-text">Desde landingpages hasta soluciones completas de automatización diseñadas para crecer contigo y tu negocio.</p>
+                        <a href="www.vicentefigueroa.com" class="btn btn-outline-primary">Saber más</a>
+                    </div>
+                </div>
+            </div> <!-- ANTIGUOS
             <div class="col-md-4 mb-4">
                 <div class="card project-card">
                     <img src="img/postgre-mysql.jpg" class="card-img-top" alt="Proyecto 1">
@@ -104,7 +115,7 @@
                         <a href="#contact" class="btn btn-outline-primary">Saber más</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- Habilidades -->
